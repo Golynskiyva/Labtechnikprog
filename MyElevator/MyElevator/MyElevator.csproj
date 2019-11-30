@@ -46,48 +46,63 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Model\Level.cs" />
+    <Compile Include="Model\Man.cs" />
+    <Compile Include="Model\People.cs" />
+    <Compile Include="Model\Statistics.cs" />
+    <Compile Include="Presenter\Lift.cs" />
+    <Compile Include="Presenter\SystemLift.cs" />
+    <Compile Include="View\addman.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="View\addman.Designer.cs">
+      <DependentUpon>addman.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="IshForm.cs">
+    <Compile Include="View\IshForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="IshForm.Designer.cs">
+    <Compile Include="View\IshForm.Designer.cs">
       <DependentUpon>IshForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Levels.cs">
+    <Compile Include="View\Levels.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Levels.Designer.cs">
+    <Compile Include="View\Levels.Designer.cs">
       <DependentUpon>Levels.cs</DependentUpon>
     </Compile>
-    <Compile Include="Lift.cs">
+    <Compile Include="View\Lift.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Lift.Designer.cs">
+    <Compile Include="View\Lift.Designer.cs">
       <DependentUpon>Lift.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Statistic.cs">
+    <Compile Include="View\Statistic.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Statistic.Designer.cs">
+    <Compile Include="View\Statistic.Designer.cs">
       <DependentUpon>Statistic.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="View\addman.resx">
+      <DependentUpon>addman.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="IshForm.resx">
+    <EmbeddedResource Include="View\IshForm.resx">
       <DependentUpon>IshForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Levels.resx">
+    <EmbeddedResource Include="View\Levels.resx">
       <DependentUpon>Levels.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Lift.resx">
+    <EmbeddedResource Include="View\Lift.resx">
       <DependentUpon>Lift.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -99,7 +114,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Statistic.resx">
+    <EmbeddedResource Include="View\Statistic.resx">
       <DependentUpon>Statistic.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -115,5 +130,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyElevator.Presenter;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace MyElevator
 {
     public partial class Levels : Form
     {
+        public SystemLift sl;
         public Levels()
         {
             InitializeComponent();
@@ -21,5 +23,10 @@ namespace MyElevator
         {
 
         }
+        public void updateInfo(string s)
+        {
+            label1.Text = s;
+        }
+        
     }
 }

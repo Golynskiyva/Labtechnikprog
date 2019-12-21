@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MyElevator.Presenter;
 
 namespace MyElevator
 {
@@ -16,7 +17,11 @@ namespace MyElevator
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Form1 f1 = new Form1();
+            
+            SystemLift slift = new SystemLift(f1);
+            f1.sl = slift;
+            Application.Run(f1);
         }
     }
 }

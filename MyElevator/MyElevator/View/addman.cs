@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyElevator.Presenter;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace MyElevator
 {
     public partial class addman : Form
     {
+        public SystemLift sl;
         public addman()
         {
             InitializeComponent();
@@ -24,10 +26,16 @@ namespace MyElevator
 
         private void button1_Click(object sender, EventArgs e)
         {
+            sl.AddMan(textBox2.Text, textBox3.Text);
             this.Close();
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
         }

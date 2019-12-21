@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace MyElevator.Model
 {
-    class People
+    public class People
     {
         public int NumbMan = 0;
-        public List<Man> Peopl;
+        public List<Man> Peopl = new List<Man>();
         Level le;
 
         public People(Level l)

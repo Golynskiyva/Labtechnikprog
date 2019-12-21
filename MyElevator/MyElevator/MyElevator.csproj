@@ -50,7 +50,7 @@
     <Compile Include="Model\Man.cs" />
     <Compile Include="Model\People.cs" />
     <Compile Include="Model\Statistics.cs" />
-    <Compile Include="Presenter\Lift.cs" />
+    <Compile Include="Model\MLift.cs" />
     <Compile Include="Presenter\SystemLift.cs" />
     <Compile Include="View\addman.cs">
       <SubType>Form</SubType>

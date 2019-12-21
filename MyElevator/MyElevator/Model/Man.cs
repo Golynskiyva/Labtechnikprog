@@ -6,7 +6,7 @@ using System.Threading;
 
 namespace MyElevator.Model
 {
-    class Man
+   public class Man
     {
         private int status = 0;
         private int endPos;

@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace MyElevator.Model
 {
-    class Statistics
+    public class Statistics
     {
-        private DateTime timeStart;
-        private DateTime timeStop;
-        private int numTripAll = 0;
-        private int numTripIdle = 0;
-        private int massAll = 0;
-        private int humEnd = 0;
+        public DateTime timeStart;
+        public DateTime timeStop;
+        public int numTripAll = 0;
+        public int numTripIdle = 0;
+        public int massAll = 0;
+        public int humEnd = 0;
         People p;
         public Statistics(People pe) 
         {

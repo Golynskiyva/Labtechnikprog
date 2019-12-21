@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyElevator.Presenter;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,11 @@ namespace MyElevator
 {
     public partial class IshForm : Form
     {
+        public SystemLift sl;
         public IshForm()
         {
             InitializeComponent();
+            
         }
         public IshForm(Form1 f)
         {
@@ -30,6 +33,7 @@ namespace MyElevator
 
         private void button1_Click(object sender, EventArgs e)
         {
+            sl.StartSys(textBox2.Text, textBox3.Text);
             this.Close();
         }
 

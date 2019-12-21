@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyElevator.Model
 {
-    class Level
+    public class Level
     {
         private int numLevel = 0;
         private bool[] indicStat;
@@ -27,8 +27,23 @@ namespace MyElevator.Model
         } 
         public bool CheckBut(int l)
         {
-            if (indicStat[l - 1]) return false;
+            int i = l - 1;
+            if (indicStat[i]) return false;
             else return true;
+        }
+        public string getInfoLevel()
+        {
+            string result = "Нету информации";
+            
+            for (int i = 0; i < numLevel; i++)
+            {
+                string buf;
+                if (indicStat[i]) buf = "Кнопка вызова на этаже " + (i + 1) + " активна";
+                else buf = "Кнопка вызова на этаже " + (i + 1) + " не активна";
+                if (result == "Нету информации") result = buf;
+                else result += buf;
+            }
+            return result;
         }
 
     }
